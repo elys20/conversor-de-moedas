@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <title>Conversor de Moedas</title>
+</head>
+
+
+<body>
+
+    <div class="content">
+        <video src="space.mov" autoplay loop muted></video>
+        <h1 class="text">Conversor</h1>
+     </div>  
+ 
+    
+
+    <div class="container">
+        <header>
+            <h1>Conversor de Moedas</h1>
+           
+        </header>
+
+        <main>
+
+            <label>
+                Converter <b>de</b>
+                <select>
+                    <option>
+                        R$ Real Brasileiro
+                    </option>
+                </select>
+            </label>
+
+            <label>
+                Converter <b>para</b>
+                <select id="currency-select">
+                    <option>
+                        US$ Dólar Americano
+                    </option>
+                    <option>
+                        € Euro
+                    </option>
+                </select>
+            </label>
+
+            <label>
+                <b>Valor</b>
+                <input id="input-real" placeholder="R$ 2.000,00">
+            </label>
+
+            <button id="converter-button" type="button">Converter</button>
+
+            <section>
+                <div class="currency-container">
+                    <img src="./img/brasil.jpg" alt="bandeira-brasil"  width="30" height="30">
+                    <p class="currency-name">Real</p>
+                    <p class="currency-value" id="real-value-text">R$ 2.000,00</p>
+                </div>
+
+                <img class="arrow-img" src="./img/seta.jpg" alt="seta" width="55" height="55">
+
+                <div class="currency-container">
+                    <img src="./img/estados unidos.jpg" id="currency-img" alt="bandeira-americana" width="30" height="30" >
+                    <p class="currency-name" id="currency-name">Dólar Americano</p>
+                    <p class="currency-value" id="currency-value-text">US$ 2.000,00</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+         <p class="copyright">&copy; Copyright Elys Mendes - 2022</p>
+    </footer>
+</body>
+<script src="./script.js" ></script>
+
+</html>
